@@ -1,0 +1,129 @@
+
+
+
+.navbar{
+    height: 100px;
+    background-color: rgba(210, 240, 14, 0.549);
+
+
+}
+.nav{
+
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+.nav ul {
+    width: 500px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.nav ul li{
+    list-style: none;
+}
+.nav ul li a {
+    text-decoration: none;
+    color: black; 
+    font-weight: bold;
+}
+.first-section{
+    background-image: url(img-1.jpg);
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+.position-box{
+    width: 350px;
+    height: 380px;
+    background-color: rgba(0, 0, 0, 0.434);
+    position: absolute;
+    opacity: 0;
+}
+.first-card:hover .position-box{
+    opacity: 1;
+    transition: .5s;
+    z-index: 11111;
+    overflow: hidden;
+}
+.first-card:hover  img{
+    transform: rotate(10deg);
+    scale: 1.3;
+    transition: .5s;
+}
+
+    
+
+.first-card{
+    width: 350px;
+    height: 380px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.695);
+}
+.first-card img{
+    width: 350px;
+    height: 450px;
+    object-fit: cover;
+
+}
+.first-second-section{
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.first-s-card{
+    width: 350px;
+    height: 400px;
+}
+.first-s-card img{
+    width: 350px;
+    height: 300px;
+
+}
+
+@media screen and (max-width: 600px) {
+    .nav ul li {
+        display: none;
+    }
+    .first-section {
+         height: auto!important;
+        
+
+        align-items: center!important;
+    
+    }
+    .r-f{
+        height: auto!important;
+    }
+    .first-con{
+        height: auto!important;
+        
+        align-items: center!important;
+        justify-content: space-evenly!important;
+        display:flex!important;
+
+
+    }
+    .first-line{
+        align-items: center!important;
+        justify-content: center!important;
+        height: auto!important;
+    }
+    .first-card{
+        margin-top: 20px;
+    }
+    .nav{
+        
+      width: 90%;
+
+    }
+    .nav button{
+        display: none;
+    }
+  }
+  
